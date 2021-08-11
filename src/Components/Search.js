@@ -47,7 +47,7 @@ class Search extends React.Component{
                     <Form.Control className="search-input" type="text" placeholder="Enter Username To Search" onChange={this.handleChange}></Form.Control>
                     <Button variant="primary" type="submit" onClick={this.handleSubmit}>Submit</Button>
                 </Form>
-                {/* Create component that shows card with users information that matches username in api call */}
+                
                 {this.state.userData &&  <UserCard username={this.state.userData.name} img={this.state.userData.avatar_url} repos={this.state.userData.repos_url} />}
 
             </div>
